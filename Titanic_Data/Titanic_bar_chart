@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+read1 = pd.read_csv("Titanic-Dataset.csv")
+
+bar_chart = read1.groupby("Sex")["Survived"].mean()
+
+bar_chart.plot(kind = "bar", color = ["red", "blue"])
+plt.title("Survival Rate of sexes")
+plt.xlabel("Sex")
+plt.ylabel("Survival Rate")
+plt.xticks(rotation=0)
+plt.show()
