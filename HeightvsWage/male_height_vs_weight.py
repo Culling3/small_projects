@@ -29,7 +29,7 @@ correlation_coefficient = correlation_matrix[0, 1]
 
 plt.title(f"Male Height vs Wage\nCorrelation Coefficient: {correlation_coefficient:.3f}")
 plt.xlabel(f"Height\nAverage male height: {ave_height:.1f} cm")
-plt.ylabel("Yearly Wage")
+plt.ylabel("Yearly Wage($)")
 plt.tight_layout()
 plt.legend()
 plt.show()
